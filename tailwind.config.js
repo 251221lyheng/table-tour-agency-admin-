@@ -32,8 +32,8 @@ module.exports = {
     },
   },
   daisyui: {
-    themes: ['light'],
+    themes: ["light"],
   },
   darkMode: "class",
-  plugins: [nextui(), require("daisyui")],
+  plugins: [nextui(), require("daisyui"), require("tailwind-scrollbar-hide")],
 };

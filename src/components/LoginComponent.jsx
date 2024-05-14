@@ -10,15 +10,15 @@ export default function LoginComponent() {
     <div>
       <button
         className="w-[90px] h-[40px] bg-main text-white text-sm rounded-xl"
-        onClick={() => document.getElementById("my_modal_1").showModal()}
+        onClick={() => document.getElementById("modal_signin").showModal()}
       >
         Sign In
       </button>
-      <dialog id="my_modal_1" className="modal">
+      <dialog id="modal_signin" className="modal">
         <div className="modal-box bg-white">
           <form className="bg-white" method="dialog">
-            <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2 bg-main text-white">
-              X
+            <button className="btn btn-sm btn-circle btn-ghost absolute right-5 top-5 bg-main text-white">
+              <i class="fa-solid fa-xmark"></i>
             </button>
 
             <div className="w-full">

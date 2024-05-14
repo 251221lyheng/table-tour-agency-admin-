@@ -8,9 +8,9 @@ export default function Home() {
   return (
     <main>
       <NavbarComponent />
-      <div className="w-[80%] m-auto">
+      {/* <div className="w-[80%] m-auto">
         <Image src={slider} alt="" />
-      </div>
+      </div> */}
     </main>
   );
 }

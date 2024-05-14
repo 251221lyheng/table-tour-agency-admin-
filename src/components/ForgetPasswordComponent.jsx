@@ -8,21 +8,21 @@ export default function ForgetPasswordComponent() {
     <div>
       <button
         className="underline"
-        onClick={() => document.getElementById("my_modal_4").showModal()}
+        onClick={() => document.getElementById("modal_forget").showModal()}
       >
         forget password
       </button>
-      <dialog id="my_modal_4" className="modal">
+      <dialog id="modal_forget" className="modal">
         <div className="modal-box bg-white">
           <form className="bg-white" method="dialog">
             <button
               className="btn btn-sm btn-circle btn-ghost absolute left-5 top-5 bg-main text-white"
               onClick={() => document.getElementById("my_modal_2").showModal()}
             >
-              X
+              <i class="fa-solid fa-arrow-left"></i>
             </button>
             <button className="btn btn-sm btn-circle btn-ghost absolute right-5 top-5 bg-main text-white">
-              X
+              <i class="fa-solid fa-xmark"></i>
             </button>
             <div className="w-full">
               <div className="">

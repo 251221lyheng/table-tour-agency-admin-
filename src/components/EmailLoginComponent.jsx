@@ -12,7 +12,7 @@ export default function EmailLoginComponent() {
     <div>
       <button
         className="w-full group h-12 px-6 border-2 border-gray-300 rounded-full transition duration-300 hover:border-secondary"
-        onClick={() => document.getElementById("my_modal_2").showModal()}
+        onClick={() => document.getElementById("modal_mailSignin").showModal()}
       >
         <div className="relative flex items-center space-x-4 justify-center">
           <Image
@@ -25,17 +25,19 @@ export default function EmailLoginComponent() {
           </span>
         </div>
       </button>
-      <dialog id="my_modal_2" className="modal">
+      <dialog id="modal_mailSignin" className="modal">
         <div className="modal-box bg-white">
           <form className="bg-white" method="dialog">
             <button
               className="btn btn-sm btn-circle btn-ghost absolute left-5 top-5 bg-main text-white"
-              onClick={() => document.getElementById("my_modal_1").showModal()}
+              onClick={() =>
+                document.getElementById("modal_signin").showModal()
+              }
             >
-              X
+              <i class="fa-solid fa-arrow-left"></i>
             </button>
             <button className="btn btn-sm btn-circle btn-ghost absolute right-5 top-5 bg-main text-white">
-              X
+              <i class="fa-solid fa-xmark"></i>
             </button>
             <div className="w-full">
               <div className="m-auto">
@@ -118,7 +120,7 @@ export default function EmailLoginComponent() {
                       </div>
                     </div>
                     <button className="mt-5 text-sm underline">
-                      <ForgetPasswordComponent/>
+                      <ForgetPasswordComponent />
                     </button>
                     <div className="mt-2 space-y-4 py-3 text-gray-600 dark:text-gray-400 text-center">
                       <button className="w-[120px] h-[40px] bg-main text-sm text-white rounded-2xl">

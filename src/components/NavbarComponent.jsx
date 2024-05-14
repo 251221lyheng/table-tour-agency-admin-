@@ -64,7 +64,6 @@ export default function NavbarComponent() {
             </ul>
             <ul class="flex items-center hidden space-x-8 lg:flex">
               <li>
-                {/* <Button className="bg-main text-white">Sign in</Button> */}
                 <LoginComponent />
               </li>
             </ul>

@@ -10,21 +10,23 @@ export default function SignupComponent() {
     <div>
       <button
         className="text-secondary underline"
-        onClick={() => document.getElementById("my_modal_3").showModal()}
+        onClick={() => document.getElementById("modal_signup").showModal()}
       >
         Sign up
       </button>
-      <dialog id="my_modal_3" className="modal">
+      <dialog id="modal_signup" className="modal">
         <div className="modal-box bg-white">
           <form className="bg-white" method="dialog">
             <button
               className="btn btn-sm btn-circle btn-ghost absolute left-5 top-5 bg-main text-white"
-              onClick={() => document.getElementById("my_modal_2").showModal()}
+              onClick={() =>
+                document.getElementById("modal_mailSignin").showModal()
+              }
             >
-              X
+              <i class="fa-solid fa-arrow-left"></i>
             </button>
             <button className="btn btn-sm btn-circle btn-ghost absolute right-5 top-5 bg-main text-white">
-              X
+              <i class="fa-solid fa-xmark"></i>
             </button>
             <div className="w-full">
               <div className="">
@@ -142,7 +144,7 @@ export default function SignupComponent() {
                       <button
                         className="w-[120px] h-[40px] bg-main text-sm text-white rounded-2xl"
                         onClick={() =>
-                          document.getElementById("my_modal_9").showModal()
+                          document.getElementById("modal_signupOtp").showModal()
                         }
                       >
                         Sign up
@@ -152,7 +154,7 @@ export default function SignupComponent() {
                         <button
                           className="text-secondary underline"
                           onClick={() =>
-                            document.getElementById("my_modal_2").showModal()
+                            document.getElementById("modal_signin").showModal()
                           }
                         >
                           Sign in
@@ -166,17 +168,19 @@ export default function SignupComponent() {
           </form>
         </div>
       </dialog>
-      <dialog id="my_modal_9" className="modal">
+      <dialog id="modal_signupOtp" className="modal">
         <div className="modal-box bg-white">
           <form className="bg-white" method="dialog">
             <button
               className="btn btn-sm btn-circle btn-ghost absolute left-5 top-5 bg-main text-white"
-              onClick={() => document.getElementById("my_modal_2").showModal()}
+              onClick={() =>
+                document.getElementById("modal_signup").showModal()
+              }
             >
-              X
+              <i class="fa-solid fa-arrow-left"></i>
             </button>
             <button className="btn btn-sm btn-circle btn-ghost absolute right-5 top-5 bg-main text-white">
-              X
+              <i class="fa-solid fa-xmark"></i>
             </button>
             <div className="w-full">
               <div className="">
@@ -248,21 +252,20 @@ export default function SignupComponent() {
                       </div>
                     </div>
                     <div className="mt-5 space-y-4 py-3 text-gray-600 dark:text-gray-400 text-center">
-                      <button className="w-[120px] h-[40px] bg-main text-sm text-white rounded-2xl"
-                      onClick={() =>
-                        document.getElementById("my_modal_2").showModal()
-                      }>
+                      <button
+                        className="w-[120px] h-[40px] bg-main text-sm text-white rounded-2xl"
+                        onClick={() =>
+                          document
+                            .getElementById("modal_mailSignin")
+                            .showModal()
+                        }
+                      >
                         Verify code
                       </button>
 
                       <p className="text-sm">
                         Haven`t got the email yet?{" "}
-                        <button
-                          className="text-secondary underline"
-                          onClick={() =>
-                            document.getElementById("my_modal_2").showModal()
-                          }
-                        >
+                        <button className="text-secondary underline">
                           Resend Email
                         </button>
                       </p>
