@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import React, { useState } from "react";
-import jalatlogo from "../../public/assets/jalat-logo.png";
+import jalatlogo from "../../../public/assets/jalat-logo.png";
 import ResetPasswordComponent from "./ResetPasswordComponent";
 
 export default function SignupComponent() {

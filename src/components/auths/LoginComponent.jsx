@@ -1,8 +1,8 @@
 "use client";
 import Image from "next/image";
 import React from "react";
-import jalatlogo from "../../public/assets/jalat-logo.png";
-import googleLogo from "../../public/assets/icons/google-logo.svg";
+import jalatlogo from "../../../public/assets/jalat-logo.png";
+import googleLogo from "../../../public/assets/icons/google-logo.svg";
 import EmailLoginComponent from "./EmailLoginComponent";
 
 export default function LoginComponent() {
@@ -25,7 +25,7 @@ export default function LoginComponent() {
               <div className="m-auto">
                 <div className="">
                   <div className="p-8">
-                    <div className="space-y-4">
+                    <div className="">
                       <Image
                         src={jalatlogo}
                         className="w-[120px] mb-10"

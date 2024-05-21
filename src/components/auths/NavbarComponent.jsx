@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import React, { useState } from "react";
-import jalatlogo from "../../public/assets/jalat-logo.png";
+import jalatlogo from "../../../public/assets/jalat-logo.png";
 import { Button } from "@nextui-org/button";
 import LoginComponent from "./LoginComponent";
 
@@ -10,7 +10,7 @@ export default function NavbarComponent() {
   return (
     <div>
       <div class="bg-gray-900">
-        <div class="px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
+        <div class="py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl">
           <div class="relative flex items-center justify-between">
             <a
               href="/"

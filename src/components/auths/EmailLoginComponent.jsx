@@ -1,8 +1,8 @@
 "use client";
 import Image from "next/image";
 import React, { useState } from "react";
-import jalatlogo from "../../public/assets/jalat-logo.png";
-import emailLogo from "../../public/assets/icons/email-regular.svg";
+import jalatlogo from "../../../public/assets/jalat-logo.png";
+import emailLogo from "../../../public/assets/icons/email-regular.svg";
 import SignupComponent from "./SignupComponent";
 import ForgetPasswordComponent from "./ForgetPasswordComponent";
 
