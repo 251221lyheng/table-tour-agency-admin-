@@ -7,6 +7,15 @@ import CarouselComponent from "@/components/auths/CarouselComponent";
 import HomepageComponent from "@/components/auths/HomepageComponent";
 
 
+import { TourGestCardComonent } from "@/components/cards/TourGestCardComponent";
+import TripPlanCardComonent from "@/components/cards/TripPlanCardComponent";
+import TourCompleteCardComponent from "@/components/cards/TourCompleteCardComponent";
+import ThingToDoCardComponent from "@/components/cards/ThingToDoCardComponent";
+import ReviewCardComponent from "@/components/cards/ReviewCardComponent";
+import ReviewCardNoComponent from "@/components/cards/ReviewCardNoComponent";
+import ProfileTravelerComponent from "@/components/cards/ProfileTravelerComponent";
+
+
 export default function Home() {
   return (
     <main>
@@ -27,13 +36,10 @@ export default function Home() {
               accusamus beatae laborum!
             </div>
           </div>
+         
           <div className="mt-5 m-auto grid grid-cols-4 gap-6">
-            {/* cards */}
-            <TourPackageCardComponent />
-            <TourPackageCardComponent />
-            <TourPackageCardComponent />
-            <TourPackageCardComponent />
-            
+           
+
           </div>
         </div>
       </div>
