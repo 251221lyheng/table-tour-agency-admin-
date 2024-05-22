@@ -1,12 +1,13 @@
 "use client";
 import * as React from "react";
-import NavbarComponent from "@/components/auths/NavbarComponent";
 import TourPackageCardComponent from "@/components/cards/TourPackageCardComponent";
+import NavbarComponent from "@/components/auths/NavbarComponent";
+import TrendingComponents from "@/components/trendings/TrendingComponents";
 
 export default function Home() {
   return (
     <main>
-      <NavbarComponent />
+      <NavbarComponent/>
       <div className="max-w-screen-xl m-auto ">
         <div>Corual</div>
         <div className="w-[85%] m-auto">
@@ -25,8 +26,9 @@ export default function Home() {
             <TourPackageCardComponent />
             <TourPackageCardComponent />
           </div>
-        </div>
+        </div>       
       </div>
+
     </main>
   );
 }
