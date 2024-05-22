@@ -1,9 +1,8 @@
 "use client";
-import * as React from "react";
-import TourPackageCardComponent from "@/components/cards/TourPackageCardComponent";
 import NavbarComponent from "@/components/auths/NavbarComponent";
+import { TourGestCardComonent } from "@/components/cards/TourGestCardComponent";
 import TrendingComponents from "@/components/trendings/TrendingComponents";
-
+import * as React from "react";
 export default function Home() {
   return (
     <main>
@@ -19,16 +18,16 @@ export default function Home() {
               accusamus beatae laborum!
             </div>
           </div>
+         
           <div className="mt-5 m-auto grid grid-cols-4 gap-6">
             {/* cards */}
-            <TourPackageCardComponent />
-            <TourPackageCardComponent />
-            <TourPackageCardComponent />
-            <TourPackageCardComponent />
+            <TourGestCardComonent/>
+            <TourGestCardComonent/>
+            <TourGestCardComonent/>
+            <TourGestCardComonent/>
           </div>
-        </div>       
       </div>
-
+      </div>
     </main>
   );
 }
