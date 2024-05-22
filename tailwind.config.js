@@ -20,11 +20,13 @@ module.exports = {
         white: "#ffffff",
         secondary: "#08B69B",
         gray: "#6D7F88",
+        main: "#0D394F",
       },
       backgroundColor: {
         main: "#0D394F",
         secondary: "#08B69B",
         gray: "#6D7F88",
+        yellow:"#fef0db",
       },
       fontFamily: {
         Poppins: ["Poppins", "sans-serif"],

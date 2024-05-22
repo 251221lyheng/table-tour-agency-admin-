@@ -2,15 +2,19 @@
 import * as React from "react";
 import NavbarComponent from "@/components/auths/NavbarComponent";
 import TourPackageCardComponent from "@/components/cards/TourPackageCardComponent";
+import FooterComponent from "@/components/auths/FooterComponent";
+import CarouselComponent from "@/components/auths/CarouselComponent";
+
 
 export default function Home() {
   return (
     <main>
       <NavbarComponent />
       <div className="max-w-screen-xl m-auto ">
-        <div>Corual</div>
+      <CarouselComponent/>
         <div className="w-[85%] m-auto">
           <div className="grid m-auto gap-5">
+           
             {/* Title */}
             <div>Title</div>
             <div className="line-clamp-2">
@@ -24,9 +28,13 @@ export default function Home() {
             <TourPackageCardComponent />
             <TourPackageCardComponent />
             <TourPackageCardComponent />
+            
           </div>
         </div>
       </div>
+    
+        <FooterComponent/>
+      
     </main>
   );
 }
