@@ -4,14 +4,19 @@ import NavbarComponent from "@/components/auths/NavbarComponent";
 import TourPackageCardComponent from "@/components/cards/TourPackageCardComponent";
 import FooterComponent from "@/components/auths/FooterComponent";
 import CarouselComponent from "@/components/auths/CarouselComponent";
+import HomepageComponent from "@/components/auths/HomepageComponent";
 
 
 export default function Home() {
   return (
     <main>
+        {/* Test homepage */}
+      <HomepageComponent/>
+
+
+
       <NavbarComponent />
       <div className="max-w-screen-xl m-auto ">
-      <CarouselComponent/>
         <div className="w-[85%] m-auto">
           <div className="grid m-auto gap-5">
            
@@ -33,8 +38,7 @@ export default function Home() {
         </div>
       </div>
     
-        <FooterComponent/>
-      
+
     </main>
   );
 }

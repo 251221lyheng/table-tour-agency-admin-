@@ -6,6 +6,7 @@ import { MdOutlineEmail } from "react-icons/md";
 import { MdOutlineLocalPhone } from "react-icons/md";
 
 import { Button } from "@nextui-org/button";
+import NavbarComponent from "./NavbarComponent";
 
 export default function FooterComponent() {
   return (
@@ -112,8 +113,6 @@ export default function FooterComponent() {
         </div>
       </div>
       </div>
-
-      
     </>
   );
 }
