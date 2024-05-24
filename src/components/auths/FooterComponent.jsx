@@ -11,7 +11,7 @@ import NavbarComponent from "./NavbarComponent";
 export default function FooterComponent() {
   return (
     <>
-      <div class=" bg-yellow mt-5 ">
+      <div class=" bg-yellow  ">
         <div class=" sm:px-1 text-gray-800 sm:grid md:grid-cols-4 sm:grid-cols-2 w-[75%] m-auto">
           <div class="p-5">
             <a

@@ -1,4 +1,5 @@
 const { nextui } = require("@nextui-org/theme");
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
@@ -7,6 +8,8 @@ module.exports = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
     "./node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}",
     "./node_modules/@nextui-org/theme/dist/components/(button|snippet|code|input).js",
+    
+   
   ],
   theme: {
     extend: {
@@ -27,6 +30,8 @@ module.exports = {
         secondary: "#08B69B",
         gray: "#6D7F88",
         yellow:"#fef0db",
+        green:"#b2e8e0",
+        
       },
       fontFamily: {
         Poppins: ["Poppins", "sans-serif"],
@@ -38,4 +43,5 @@ module.exports = {
   },
   darkMode: "class",
   plugins: [nextui(), require("daisyui"), require("tailwind-scrollbar-hide")],
+  
 };
