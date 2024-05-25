@@ -25,7 +25,7 @@ export default function HomepageComponent() {
                 {/* Our tours */}
                 <h1 className='text-center text-2xl font-bold text-main  mt-[40px] '>Our Tours</h1>
                 <div className='flex justify-center gap-10 mt-5 '>
-                    <div className='w-[150px] h-[130px]  rounded-md border-2 border-blue-200 '>
+                    <div className='md:w-[100px] md:h-[80px] lg:w-[150px] lg:h-[130px]  rounded-md border-2 border-blue-200 '>
                     <Image src={iland} className="w-[50px] m-auto mt-5 " alt="" />
                         <p className='text-main font-bold text-center'>Sea</p>
                     </div>
