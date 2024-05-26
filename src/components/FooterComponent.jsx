@@ -1,7 +1,7 @@
 import React from "react";
 
 import Image from "next/image";
-import jalatlogo from "../../../public/assets/jalat-logo.png";
+import jalatlogo from "../../public/assets/jalat-logo.png";
 import { MdOutlineEmail } from "react-icons/md";
 import { MdOutlineLocalPhone } from "react-icons/md";
 

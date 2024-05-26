@@ -1,5 +1,5 @@
 "use client";
-import HomepageComponent from "@/components/auths/HomepageComponent";
+import HomepageComponent from "@/components/HomepageComponent";
 import { TourGestCardComonent } from "@/components/cards/TourGestCardComponent";
 export default function Home() {
   return (
