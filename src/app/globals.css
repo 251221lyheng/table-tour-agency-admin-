@@ -7,3 +7,10 @@
     src: url("../../public/fonts/Poppins-Medium.ttf");
   }
   
+.no-scrollbar::-webkit-scrollbar{
+  display: none;
+}
+.no-scrollbar{
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}

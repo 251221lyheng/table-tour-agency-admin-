@@ -3,19 +3,14 @@ import React from "react";
 const TrendingComponents = () => {
   return (
     <div>
-      <section className="bg-cover bg-center bg-green-100 py-20">
-        <h3 className="text-3xl font-bold mt-3">
-        Trending History Places 
-        </h3>
-        <p className="">
-        Discover top coastal spots with Sea Area, from the tropical beaches of the Maldives to the scenic shores of the Mediterranean. Find your perfect seaside getaway today.
-        </p>
+      <section className="bg-cover bg-center ">
+        
         {/* Pic 1 */}
         <div className="flex gap-3 mt-6">
           <div className=" relative w-[40%]">
             <img
               className="rounded-3xl h-[362px]"
-              src="https://lh3.googleusercontent.com/p/AF1QipOkhrI1Cm6qXOR5hwfIKyXyJ_1Mnfmbwdz3oFwh=s1360-w1360-h1020"
+              src="https://cdn.expeditions.com/globalassets/expedition-stories/cambodia-up-close-7-must-see-sites-at-angkor-wat/angkor-wat-main.jpg"
               alt=""
             />
             <div className=" absolute bottom-3 left-5 text-white font-bold">

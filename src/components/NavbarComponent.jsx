@@ -1,9 +1,9 @@
 "use client";
 import Image from "next/image";
 import React, { useState } from "react";
-import jalatlogo from "../../../public/assets/jalat-logo.png";
+import jalatlogo from "../../public/assets/jalat-logo.png";
 import { Button } from "@nextui-org/button";
-import LoginComponent from "./LoginComponent";
+import LoginComponent from "./auths/LoginComponent";
 
 export default function NavbarComponent() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);

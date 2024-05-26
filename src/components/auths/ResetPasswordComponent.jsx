@@ -14,12 +14,7 @@ export default function ResetPasswordComponent() {
       >
         forget password
       </button> */}
-      <button
-        className="w-[120px] h-[40px] bg-main text-sm text-white rounded-2xl"
-        onClick={() => document.getElementById("modal_reset").showModal()}
-      >
-        Verify
-      </button>
+      
       <dialog id="modal_reset" className="modal">
         <div className="modal-box bg-white">
           <form className="bg-white" method="dialog">

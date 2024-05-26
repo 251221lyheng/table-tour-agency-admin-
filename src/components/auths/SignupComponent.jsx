@@ -8,12 +8,6 @@ export default function SignupComponent() {
   const [showPassword, setShowPassword] = useState(false);
   return (
     <div>
-      <button
-        className="text-secondary underline"
-        onClick={() => document.getElementById("modal_signup").showModal()}
-      >
-        Sign up
-      </button>
       <dialog id="modal_signup" className="modal">
         <div className="modal-box bg-white">
           <form className="bg-white" method="dialog">
@@ -265,9 +259,12 @@ export default function SignupComponent() {
 
                       <p className="text-sm">
                         Haven`t got the email yet?{" "}
-                        <button className="text-secondary underline">
+                        {/* <button className="text-secondary underline">
                           Resend Email
-                        </button>
+                        </button> */}
+                        <span className="countdown">
+                          <span style={{ "--value": 15 }}></span>
+                        </span>
                       </p>
                     </div>
                   </div>
