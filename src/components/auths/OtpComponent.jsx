@@ -6,12 +6,6 @@ import ResetPasswordComponent from "./ResetPasswordComponent";
 export default function OtpComponent() {
   return (
     <div>
-      <button
-        className="w-[120px] h-[40px] bg-main text-sm text-white rounded-2xl"
-        onClick={() => document.getElementById("modal_otp").showModal()}
-      >
-        SEND
-      </button>
       <dialog id="modal_otp" className="modal">
         <div className="modal-box bg-white">
           <form className="bg-white" method="dialog">
@@ -99,18 +93,29 @@ export default function OtpComponent() {
                       {/* <button className="w-[120px] h-[40px] bg-main text-sm text-white rounded-2xl">
                         Verify code
                       </button> */}
-                      <ResetPasswordComponent />
+
+                      <button
+                        className="w-[120px] h-[40px] bg-main text-sm text-white rounded-2xl"
+                        onClick={() =>
+                          document.getElementById("modal_reset").showModal()
+                        }
+                      >
+                        Verify
+                      </button>
 
                       <p className="text-sm">
                         Haven`t got the email yet?{" "}
-                        <button
+                        {/* <button
                           className="text-secondary underline"
                           onClick={() =>
                             document.getElementById("my_modal_2").showModal()
                           }
                         >
                           Resend Email
-                        </button>
+                        </button> */}
+                        <span className="countdown">
+                          <span style={{ "--value": 15 }}></span>
+                        </span>
                       </p>
                     </div>
                   </div>
@@ -120,6 +125,7 @@ export default function OtpComponent() {
           </form>
         </div>
       </dialog>
+      <ResetPasswordComponent />
     </div>
   );
 }

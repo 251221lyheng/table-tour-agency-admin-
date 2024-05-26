@@ -10,21 +10,6 @@ export default function EmailLoginComponent() {
   const [showPassword, setShowPassword] = useState(false);
   return (
     <div>
-      <button
-        className="w-full group h-12 px-6 border-2 border-gray-300 rounded-full transition duration-300 hover:border-secondary"
-        onClick={() => document.getElementById("modal_mailSignin").showModal()}
-      >
-        <div className="relative flex items-center space-x-4 justify-center">
-          <Image
-            src={emailLogo}
-            className="absolute left-0 w-5"
-            alt="email logo"
-          />
-          <span className="block w-max font-semibold tracking-wide text-gray-700 text-sm transition duration-300 group-hover:text-secondary sm:text-base">
-            Continue with Email
-          </span>
-        </div>
-      </button>
       <dialog id="modal_mailSignin" className="modal">
         <div className="modal-box bg-white">
           <form className="bg-white" method="dialog">
@@ -119,15 +104,28 @@ export default function EmailLoginComponent() {
                         </svg>
                       </div>
                     </div>
-                    <button className="mt-5 text-sm underline">
-                      <ForgetPasswordComponent />
+                    <button
+                      className="underline mt-5 text-sm"
+                      onClick={() =>
+                        document.getElementById("modal_forget").showModal()
+                      }
+                    >
+                      forget password
                     </button>
                     <div className="mt-2 space-y-4 py-3 text-gray-600 dark:text-gray-400 text-center">
                       <button className="w-[120px] h-[40px] bg-main text-sm text-white rounded-2xl">
                         Sign In
                       </button>
                       <p className="text-sm flex justify-center gap-2">
-                        Don`t have an account? <SignupComponent />
+                        Don`t have an account?{" "}
+                        <button
+                          className="text-secondary underline"
+                          onClick={() =>
+                            document.getElementById("modal_signup").showModal()
+                          }
+                        >
+                          Sign up
+                        </button>
                       </p>
                     </div>
                   </div>
@@ -137,6 +135,8 @@ export default function EmailLoginComponent() {
           </form>
         </div>
       </dialog>
+      <ForgetPasswordComponent />
+      <SignupComponent />
     </div>
   );
 }

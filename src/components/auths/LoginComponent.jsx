@@ -4,6 +4,7 @@ import React from "react";
 import jalatlogo from "../../../public/assets/jalat-logo.png";
 import googleLogo from "../../../public/assets/icons/google-logo.svg";
 import EmailLoginComponent from "./EmailLoginComponent";
+import emailLogo from "../../../public/assets/icons/email-regular.svg";
 
 export default function LoginComponent() {
   return (
@@ -49,7 +50,26 @@ export default function LoginComponent() {
                           </span>
                         </div>
                       </button>
-                      <EmailLoginComponent />
+                      {/* email password */}
+                      <button
+                        className="w-full group h-12 px-6 border-2 border-gray-300 rounded-full transition duration-300 hover:border-secondary"
+                        onClick={() =>
+                          document
+                            .getElementById("modal_mailSignin")
+                            .showModal()
+                        }
+                      >
+                        <div className="relative flex items-center space-x-4 justify-center">
+                          <Image
+                            src={emailLogo}
+                            className="absolute left-0 w-5"
+                            alt="email logo"
+                          />
+                          <span className="block w-max font-semibold tracking-wide text-gray-700 text-sm transition duration-300 group-hover:text-secondary sm:text-base">
+                            Continue with Email
+                          </span>
+                        </div>
+                      </button>
                     </div>
                     <div className="mt-14 space-y-4 py-3 text-gray-600 dark:text-gray-400 text-center">
                       <p className="text-xs">
@@ -71,6 +91,7 @@ export default function LoginComponent() {
           </form>
         </div>
       </dialog>
+      <EmailLoginComponent />
     </div>
   );
 }

@@ -6,18 +6,12 @@ import OtpComponent from "./OtpComponent";
 export default function ForgetPasswordComponent() {
   return (
     <div>
-      <button
-        className="underline"
-        onClick={() => document.getElementById("modal_forget").showModal()}
-      >
-        forget password
-      </button>
       <dialog id="modal_forget" className="modal">
         <div className="modal-box bg-white">
           <form className="bg-white" method="dialog">
             <button
               className="btn btn-sm btn-circle btn-ghost absolute left-5 top-5 bg-main text-white"
-              onClick={() => document.getElementById("my_modal_2").showModal()}
+              onClick={() => document.getElementById("modal_mailSignin").showModal()}
             >
               <i class="fa-solid fa-arrow-left"></i>
             </button>
@@ -55,7 +49,15 @@ export default function ForgetPasswordComponent() {
                       />
                     </div>
                     <div className="mt-5 space-y-4 py-3 text-gray-600 dark:text-gray-400 text-center">
-                      <OtpComponent />
+                      {/* opt  */}
+                      <button
+                        className="w-[120px] h-[40px] bg-main text-sm text-white rounded-2xl"
+                        onClick={() =>
+                          document.getElementById("modal_otp").showModal()
+                        }
+                      >
+                        SEND
+                      </button>
                     </div>
                   </div>
                 </div>
@@ -64,6 +66,7 @@ export default function ForgetPasswordComponent() {
           </form>
         </div>
       </dialog>
+      <OtpComponent />
     </div>
   );
 }
